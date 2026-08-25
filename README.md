@@ -64,7 +64,7 @@ Inmind/
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/zxkiidev/inmind.git](https://github.com/zxkiidev/inmind.git)
+   git clone https://github.com/zxkiidev/inmind.git
    cd inmind
    ```
 
