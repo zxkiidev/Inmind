@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraAI — Plataforma Inteligente</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <div style="position: fixed; top: 15%; left: 10%; width: 250px; height: 250px; background: #ff9a9e; filter: blur(80px); border-radius: 50%; z-index: -1;"></div>
+  <div style="position: fixed; bottom: 20%; right: 10%; width: 300px; height: 300px; background: #a1c4fd; filter: blur(90px); border-radius: 50%; z-index: -1;"></div>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="logo">AuraAI</div>
+    <div class="nav-links">
+      <a href="#features">Funciones</a>
+      <a href="#how-it-works">Cómo funciona</a>
+      <a href="#pricing">Precios</a>
+      <a href="#contact" class="btn-nav">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Crea proyectos en segundos con <span>Inteligencia Artificial</span></h1>
+    <p>Aumenta tu productividad automatizando tareas complejas con nuestro motor de IA de última generación.</p>
+    <a href="#contact" class="btn-primary">Probar Gratis</a>
+  </header>
+
+  <!-- Características -->
+  <section id="features" class="section reveal">
+    <h2>Características Principales</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>⚡ Velocidad Extrema</h3>
+        <p>Procesa datos y genera respuestas en milisegundos gracias a nuestra infraestructura optimizada.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Máxima Seguridad</h3>
+        <p>Encriptación de extremo a extremo para garantizar que la información de tu empresa esté protegida.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 Modelos Personalizados</h3>
+        <p>Adapta los algoritmos a las necesidades específicas de tu flujo de trabajo o negocio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section id="how-it-works" class="section bg-alt reveal">
+    <h2>¿Cómo funciona?</h2>
+    <div class="grid-3">
+      <div class="step"><span>1</span><p>Conecta tus fuentes de datos en un par de clics.</p></div>
+      <div class="step"><span>2</span><p>Define las reglas y objetivos de tu asistente de IA.</p></div>
+      <div class="step"><span>3</span><p>Obtén resultados automatizados e integrados en tu app.</p></div>
+    </div>
+  </section>
+
+  <!-- Planes y Precios -->
+  <section id="pricing" class="section reveal">
+    <h2>Planes y Precios</h2>
+    <div class="grid-3">
+      <div class="card pricing-card">
+        <h3>Starter</h3>
+        <p class="price">$0 <span>/ mes</span></p>
+        <p>Ideal para proyectos personales y pruebas rápidas.</p>
+      </div>
+      <div class="card pricing-card featured">
+        <h3>Pro</h3>
+        <p class="price">$29 <span>/ mes</span></p>
+        <p>Para profesionales que buscan automatización constante.</p>
+      </div>
+      <div class="card pricing-card">
+        <h3>Enterprise</h3>
+        <p class="price">$99 <span>/ mes</span></p>
+        <p>Soporte dedicado e integración a medida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-alt reveal">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-container">
+      <details>
+        <summary>¿Puedo cancelar mi suscripción en cualquier momento?</summary>
+        <p>Sí, no hay compromisos de permanencia. Puedes cancelar desde tu panel de control cuando quieras.</p>
+      </details>
+      <details>
+        <summary>¿Ofrecen prueba gratuita?</summary>
+        <p>Sí, el plan Starter es totalmente gratuito de por vida con un límite mensual de peticiones.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Formulario de Contacto -->
+  <section id="contact" class="section reveal">
+    <h2>Contáctanos</h2>
+    <form id="contactForm" class="form">
+      <input type="text" id="name" placeholder="Tu nombre" required>
+      <input type="email" id="email" placeholder="Tu correo electrónico" required>
+      <textarea id="message" placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+      <button type="submit" class="btn-primary">Enviar mensaje</button>
+    </form>
+    <div id="formResponse" class="response-msg"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 AuraAI Technologies. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
