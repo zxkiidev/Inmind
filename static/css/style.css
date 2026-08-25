@@ -25,6 +25,10 @@
   font-family: 'Roboto', system-ui, -apple-system, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--md-background);
   color: var(--md-text-main);
@@ -345,4 +349,106 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Footer *//* --- Footer Pro & Responsive --- */
+footer.footer {
+  background-color: var(--md-surface);
+  border-top: 1px solid var(--md-outline);
+  padding: 4rem 2rem 2rem 2rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--md-outline);
+  text-align: left;
+}
+
+.footer-brand p {
+  color: var(--md-text-muted);
+  margin: 1rem 0 1.5rem 0;
+  font-size: 0.95rem;
+  max-width: 320px;
+}
+
+
+/* Grid de enlaces */
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-column h4 {
+  font-size: 0.95rem;
+  color: var(--md-text-main);
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-column a {
+  display: block;
+  color: var(--md-text-muted);
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  transition: var(--md-transition);
+}
+
+.footer-column a:hover {
+  color: var(--md-primary);
+  transform: translateX(2px);
+}
+
+/* Barra inferior */
+.footer-bottom {
+  max-width: 1050px;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--md-text-muted);
+  font-size: 0.85rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: var(--md-text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--md-transition);
+}
+
+.social-links a:hover {
+  color: var(--md-primary);
+}
+
+/* Adaptación Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 1.2rem;
+    text-align: center;
+  }
 }
